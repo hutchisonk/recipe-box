@@ -1,0 +1,140 @@
+
+div div {
+margin: auto auto;
+text-align: center;
+}
+
+.recipebox {
+  border:1px solid #555;
+  border-radius: 1px;
+  width:100%;
+}
+
+.recipe_card {
+  position: relative;
+  border:1px solid #555;
+  border-radius: 1px;
+  border-bottom: none;
+  margin:3px;
+  height:4em;
+}
+
+.recipe_card:hover {
+  height:inherit;
+}
+
+.recipe_card:hover > .edit_recipe_btn{
+  display: inline-block;
+}
+
+.recipe_card h2 {
+  text-align: left;
+  position:absolute;
+  margin:0px 3px;
+  width:40%;
+  height:1.5em;
+  line-height:.75em;
+  overflow:scroll;
+}
+
+.recipe_card:hover h2 {
+  color:#FD949E;
+  height:4em;
+
+}
+
+.ingredient {
+  list-style: none;
+  border-bottom: 1px solid #93F1FF;
+  margin:10px;
+  font-size: 1em;
+  z-index: 3;
+
+}
+
+.ingredient {
+  display:none;
+  -webkit-transition-delay: 2s; /* Safari */
+  transition-delay: 2s;
+}
+
+.delete_recipe_btn {
+  height: 12px;
+  padding: 0 5px;
+  margin:2px;
+  line-height: 10px;
+  font-size: 8px;
+  border-radius: 2px;
+  background-color: #FC5364;
+  color:#BCF7F7;
+}
+
+.done_editing_recipe_btn:active, .delete_recipe_btn:active {
+  background-color: #ddd;
+}
+
+.edit_recipe_btn {
+    float:right;
+    height: 12px;
+    padding: 0 5px;
+    margin:2px;
+    line-height: 10px;
+    font-size: 8px;
+    display:none;
+    border-radius: 2px;
+}
+
+.edit_recipe_btn:hover {
+  border-color: #FD949E;
+  background-color: #FD949E;
+}
+.edit_recipe_btn:active {
+  background-color: #93F1FF;
+}
+.recipe-add button, .done_editing_recipe_btn  {
+  border-color: #42D0FF
+}
+.recipe-add {
+  border:2px solid #BCF7F7;
+  padding:5px;
+}
+form {
+  margin-bottom:5px;
+  background-color: #fff;
+}
+.recipe-edit-div {
+  position:absolute;
+  padding:5px;
+  margin:5px;
+  font-size:smaller;
+  /*color:#FD949E;*/
+  width: 50%;
+  left: 100%;
+  top:0;
+  display:block;
+  border:2px solid #FD949E;
+}
+
+input {
+  margin-bottom: .5rem;
+}
+/*
+.ingredient:nth-child(1) {
+  margin-top: 2em;
+}*/
+
+.recipe_card:hover > h2 {
+  color:#FD949E;
+  height:4em;
+}
+.recipe_card > ul li.ingredient {
+  display:none;
+  -webkit-transition-delay: 2s; /* Safari */
+  transition-delay: 2s;
+}
+
+.recipe_card:hover > ul li.ingredient {
+  display:block;
+  -webkit-transition-delay: 0s; /* Safari */
+  transition-delay: 0s;
+}
